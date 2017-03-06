@@ -1,0 +1,84 @@
+.image-popup {
+	display: none;
+	position: fixed;
+	width: calc(100% - 380px);
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.7);
+	.wp-caption-text {
+		span.credits {
+			display: block; // alleen in image-popup
+		}
+	}
+
+	.box {
+		margin: auto;
+		background-color: rgb(255, 255, 255);
+		border: 10px solid rgba(255, 255, 255, 0.3);
+		// max-height: 80%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		#panzoom {
+			max-width: 100%;
+		}
+		button {
+			height: 2em;
+			color: white;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 0;
+			position: absolute;
+			margin: 0.2em;
+			svg {
+				height: 100%;
+			}
+		}
+		.zoom-in, .zoom-out {
+			bottom: .3em;
+		    left: .3em;
+			z-index: 2;
+		}
+		.zoom-in {
+			margin-bottom: 3em;
+		}
+		.image-popup-close {
+			margin: 0.5em;
+			top: 0;
+			right: 0;
+		}
+	}
+	.author {
+		padding: 1em 2em;
+		color: white;
+		z-index: 99;
+		position: fixed;
+	}
+}
+
+// .center {
+//     margin: auto;
+//     width: 70%;
+//     border: 3px solid #73AD21;
+//     padding: 10px;
+// }
+
+.image-popup > p.wp-caption-text {
+
+	padding: 2px 20px;
+	background: $blue-light;
+	color: #FFF;
+	line-height: 24px;
+	display: block;
+	position: relative;
+    text-align: center;
+	width: initial;
+	margin: 0.5em 0 0 3em;
+	.credits {
+		display: inline-block;
+		margin-left: 2em;
+	}
+}

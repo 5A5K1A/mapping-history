@@ -1,0 +1,103 @@
+{
+    "key": "group_marker_streetview",
+    "title": "Marker StreetView",
+    "fields": [
+        {
+            "message": "<div id=\"publishing-action\">\n\t<input name=\"original_publish\" type=\"hidden\" id=\"original_publish\" value=\"Bijwerken\">\n\t<input name=\"save\" type=\"submit\" class=\"button button-primary button-large\" id=\"publish\" value=\"Bijwerken\">\n<\/div>\n<div class=\"clear\"><\/div>\t\t<div class=\"od-message\">\n\t\t\t<div class=\"acf-label\">\n\t\t\t\t<br><br>\n\t\t\t\t<label>Google Street View (optioneel)<\/label>\n\t\t\t\t<p class=\"description\">Klik eerst op de knop \"Bijwerken\" (hierboven) voordat je een Google Street View toe voegt.<\/p>\n\t\t\t<\/div>\n\n\t\t\t<a href=\"media-upload.php?post_id=2146&type=streetview&tab=streetview&TB_iframe=true&max-height=400&max-width=640\" class=\"button thickbox\" title=\"Voeg Google Street View toe\"><span>Voeg Google Street View toe<\/span><\/a>\n\t\t\t<p class=\"\" id=\"succes\"><\/p>\n\t\t\t<script type='text\/javascript'>\n\t\t\t\tfunction show_image(image) {\n\t\t\t\t\t $('#acf-field_56c5e3fc04078').text(image);\n\t\t\t\t}\n\t\t\t\tfunction show_succes() {\n\t\t\t\t\t $('#succes').text('Er is een Google Street View toegevoegd. Klik nogmaals op de knop \"Bijwerken\" om de foto te tonen.');\n\t\t\t\t}\n\t\t\t\tfunction show_streetview(embedcode) {\n\t\t\t\t\t $('#acf-field_56c59eae39d16').text(embedcode);\n\t\t\t\t\t tb_remove();\n\t\t\t\t}\n\t\t\t<\/script>\n\t\t<\/div>",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56c47f9b8212a",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": 4,
+            "key": "field_56c59eae39d16",
+            "label": "StreetView output (hiddem)",
+            "name": "output_sv",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "editor-hidden",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": 4,
+            "key": "field_56c5e3fc04078",
+            "label": "StreetView image (hiddem)",
+            "name": "image_sv",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "editor-hidden",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56c5e42004079",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "marker"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "categories",
+        "tags"
+    ],
+    "active": 1,
+    "description": "CPT: Marker",
+    "modified": 1486232488
+}

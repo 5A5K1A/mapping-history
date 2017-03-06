@@ -1,0 +1,46 @@
+{
+    "key": "group_marker_tooltip",
+    "title": "1 Tooltip Marker",
+    "fields": [
+        {
+            "message": "De titel van deze marker is op de website te zien als men met de muis over de marker op de kaart gaat.",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56dd99dd8bc9d",
+            "label": "Tooltip",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidelabel",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "marker"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "author",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "CPT: Marker",
+    "modified": 1486218915
+}

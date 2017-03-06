@@ -1,0 +1,300 @@
+// article
+article {
+	z-index: 1;
+	overflow: scroll;
+	height: calc(100vh - 105px);
+	header {
+		border-bottom: 2px solid;
+		border-color: $gray-light;
+		max-height: $navbar-height;
+	}
+	h1 {
+		padding: 0.9em 0 0.7em 2.5em;
+		margin-bottom: 0;
+		font-size: 1.4em;
+	}
+	h2 {
+		font-size: 1em;
+		font-weight: 800;
+		margin: 0.5em 2em 0px;
+	}
+	p {
+    	padding: 0.5em 2em;
+		margin: 1em;
+	}
+	img {
+		width: 100%;
+	}
+	p > img {
+		width: calc(100% + 6em);
+		max-width: calc(100% + 6em);
+		margin-left: -3em;
+	}
+}
+
+.activate-menu {
+	font-weight: bold;
+}
+
+.activate-menu-icon {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 17px;
+    top: -1em;
+    margin-left: 5.3em;
+    border-top: 0.2em solid $black;
+    border-bottom: 0.2em solid $black;
+}
+
+.activate-menu-icon:before {
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid $black;
+}
+
+// video embed
+
+iframe {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 17.8em;
+}
+
+.photo, .wp-caption {
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+div.row.marker-years {
+	margin: 1em;
+}
+
+.fancybox {
+	display: none;
+	position: fixed;
+	width: calc(100% - 380px);
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.7);
+	.box {
+		background-color: rgb(255, 255, 255);
+		border: 10px solid rgba(255, 255, 255, 0.3);
+		max-height: 70%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		.panzoom {
+			max-width: 100%;
+			cursor: pointer;
+		}
+		button {
+			height: 2em;
+			color: white;
+			background: rgba(255, 255, 255, 0.3);
+			padding: 0;
+			position: absolute;
+			margin: 0.2em;
+			svg {
+				height: 100%;
+			}
+		}
+		.zoom-in, .zoom-out {
+			bottom: 0;
+			left: 0;
+		}
+		.zoom-in {
+			margin-bottom: 3em;
+		}
+		.fancybox-close {
+			top: 0;
+			right: 0;
+		}
+		.wp-caption-text {
+			background-color: inherit;
+			color: $white;
+		}
+	}
+	.author {
+		padding: 1em 2em;
+		color: white;
+		z-index: 99;
+		position: fixed;
+	}
+}
+
+.wp-caption-text {
+	font-weight: normal;
+	position: absolute;
+	width: 100%;
+	color: $white;
+	background-color: $blue-light;
+	float:left;
+	padding: 1em 3em;
+	word-wrap: break-word;
+	left: 0;
+	bottom: 0;
+	span.credits {
+		display: none;
+	}
+}
+
+main .wp-caption .wp-caption-text {
+ display: none;
+}
+
+
+
+.featured {
+	p {
+		font-weight: 500;
+	}
+}
+
+.streetview {
+	cursor: pointer;
+	span {
+	color: $white;
+	margin-left: 4.5em;
+	font-weight: 800;
+	position: relative;
+    top: -1.6em;
+	cursor: pointer;
+	}
+}
+
+.streetviewClose {
+	width: 3em;
+	height: 3em;
+	margin-right: 1.1em;
+    margin-top: 2.25em;
+	background: url(close-streetview.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#maphist_app > div:nth-child(2) > div:nth-child(7) {
+	display: none;
+}
+
+#maphist_app .streetviewClose {
+	display: block;
+}
+
+.box > p.wp-caption-text {
+	display: inline-block;
+	span {
+		display: inline-block;
+	}
+}
+
+.wp-image-287 {
+	padding: 0 2.8em;
+    width: 90%;
+}
+
+//related markers
+.related-markers {
+	padding: 0.5em;
+    margin: 2em auto;
+	position: relative;
+	&:before, &:after {
+		content:'';
+		width:28em;
+		height:1px;
+		margin-left: 1.25em;
+		background: #000;
+	}
+	img {
+		margin-top: 1em;
+		width: 70%;
+	}
+	span {
+		margin-bottom: 1em;
+	}
+	h2 {
+		margin-left: 2.5em;
+	}
+}
+
+.marker-years > ul {
+	padding: 0;
+	margin: 1em 0 0 1.5em;
+	a {
+		margin: 0.5em;
+	}
+}
+
+.social {
+	margin: 2em;
+	margin-left: 3em;
+}
+
+
+//legenda
+
+.legenda {
+	margin-left: 30px;
+	text-align: left;
+	margin: 40px;
+	position: inherit;
+}
+
+.legenda > ul {
+	max-width: 100%;
+	height: auto;
+	list-style: none;
+
+	li {
+		margin-bottom: 10px;
+		display: inline-block;
+
+		.legenda-brown {
+			background-color: $legenda-brown;
+		}
+
+		.legenda-gray {
+			background-color: $legenda-gray;
+		}
+
+		.legenda-yellow {
+			background-color: $legenda-yellow;
+		}
+
+		.legenda-pink {
+			background-color: $legenda-pink;
+		}
+
+		.legenda-green {
+			background-color: $legenda-green;
+		}
+
+		.legenda-green-light {
+			background-color: $legenda-green-light;
+		}
+
+		span {
+			width: 35px;
+			height: 20px;
+			display: inline-block;
+		}
+	}
+}
+
+
+//mobile
+@media (max-width: 380px) {
+	.fancybox {
+		width: 100%;
+	}
+	.box {
+
+	}
+}

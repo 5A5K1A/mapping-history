@@ -1,0 +1,75 @@
+.od-message {
+	max-width: 70%;
+// float: left;
+
+
+}
+
+.infoWindow {
+	border: 1px solid lightgrey;
+	background-color: white;
+	padding: 10px;
+	height: 30px;
+	min-width: 200px;
+	max-width: 250px;
+
+	img {
+		 margin: -10px 10px -10px -10px;
+		 float: left;
+	}
+}
+
+.hidelabel .acf-label {
+	display: none;
+}
+
+#acf-group_marker_tooltip {
+	margin-bottom: 0 !important;
+}
+// #acf-group_connected_image {
+// 	margin-top: 0 !important;
+// }
+
+
+.od-preview {
+    margin: 1em 0;
+	height: 300px;
+    width: 500px;
+    position: relative;
+
+    .image {
+    	height: 100%;
+    	width: 100%;
+    	position: relative;
+    }
+
+    .od-caption {
+	    bottom: 0;
+		position: absolute;
+		width: 100%;
+
+		p {
+			margin-bottom: 0;
+			background-color: rgba(50, 38, 91, 0.7);
+			padding: 10px;
+			color: #fff;
+		}
+	}
+}
+.explain {
+	max-width: 500px;
+	margin-top: 0;
+
+	li {
+		color: #666;
+		font-size: 13px;
+    	font-style: italic;
+	}
+}
+
+body.role-editor .acf-field.editor-hidden {
+	display: none;
+}body.role-administrator .acf-field.editor-hidden {
+	color: grey;
+	opacity: 0.4;
+}

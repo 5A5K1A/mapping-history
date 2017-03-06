@@ -1,0 +1,74 @@
+{
+    "key": "group_connected_image",
+    "title": "2 Featured image output",
+    "fields": [
+        {
+            "message": "",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56bb305f7a724",
+            "label": "Thumbnail output",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidelabel",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_56cee3950763e",
+            "label": "Foto ID (hiddem)",
+            "name": "connected_image",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "editor-hidden",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "marker"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "theme"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "author",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "CPT: Marker & Kaartthema (Tooltip & thumbnail info)",
+    "modified": 1486209139
+}

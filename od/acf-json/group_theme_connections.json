@@ -1,0 +1,63 @@
+{
+    "key": "group_theme_connections",
+    "title": "Kaartthema's",
+    "fields": [
+        {
+            "taxonomy": "year",
+            "field_type": "select",
+            "multiple": 0,
+            "allow_null": 0,
+            "return_format": "object",
+            "add_term": 1,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_56c1a1eeb8c76",
+            "label": "Gekoppelde kaart (standaard jaar)",
+            "name": "defaultYear",
+            "type": "taxonomy",
+            "instructions": "Indien geen kaart geselecteerd, dan wordt gekeken naar de gekoppelde markers & de meest recente kaart getoond.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<i>Er zijn geen <a href=\"edit.php?post_type=marker\">markers<\/a> gekoppeld aan dit thema.<\/i>",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56c1dadc9a6cf",
+            "label": "Gekoppelde markers",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "theme"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "CPT: Kaartthema",
+    "modified": 1486209105
+}

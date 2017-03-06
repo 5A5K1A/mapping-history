@@ -1,0 +1,23 @@
+.infoWindow {
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 10px;
+	padding: 0;
+	height: 6.15em;
+	width: 100%;
+	img {
+		width: 6em;
+		height: 6em;
+		clear: left;
+	}
+	h2 {
+		float: right;
+		font-size: 1em;
+		padding: 1em;
+		text-align: left;
+		max-width: 20em;
+		margin-top: -6em;
+		display: inline-block;
+		line-height: 1.8em;
+	}
+}

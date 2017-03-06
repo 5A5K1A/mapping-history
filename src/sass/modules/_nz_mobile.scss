@@ -1,0 +1,263 @@
+//tablet
+
+@media (max-width: 920px) {
+    .image-popup {
+        width: 100%;
+    }
+}
+
+//mobile
+
+@media (max-width: 480px) {
+    .swipe {
+        transition-duration: 0s;
+    }
+    .navbar-default .navbar-toggle {
+        right: 0;
+        position: fixed;
+    }
+    .navbar-default {
+
+    }
+    .container {
+        width: 100%;
+        right: 0;
+    }
+    main {
+        background: white;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 52px;
+    }
+    .fancybox {
+        width: 100%;
+    }
+    .image-popup .box {
+        top: 20%;
+        margin: 0;
+        border: 0;
+        background-color: inherit;
+    }
+    #maphist_app {
+        width: 100%;
+        top: 52px;
+        height: calc(100% - 105px);
+    }
+    .navbar-default {
+        width: 100%;
+        position: fixed;
+    }
+    .map {
+        float: left;
+    }
+    .swipe.open-sidebar {
+        margin-right: 100%;
+    }
+    nav:first-child a:first-child{
+        font-size: 1.4em;
+    }
+    .icon-map-active {
+        display: none;
+    }
+    .icon-map-inactive {
+        display: block;
+    }
+    iframe {
+        height: 15em;
+    }
+    .swipe .swipe-area, .swipe #sidebar-toggle {
+        display: none;
+    }
+    .navbar-header {
+        border-bottom: 2px solid $gray-light;
+        position: fixed;
+        width: 100%;
+        background: $white;
+        z-index: 90;
+    }
+
+    .navbar-collapse {
+        top: 52px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        border-top: 0;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    .nav > li {
+        padding: 0.15em 0 0.15em 0;
+    }
+
+    //in wordpress aanpassen
+    .wp-caption {
+        width: 100% !important;
+    }
+    .panzoom {
+        transform: matrix(0, 0, 0, 0, 0, 0)
+    }
+    .image-popup > p.wp-caption-text {
+        padding: 0;
+        margin: 0;
+        top: 20%;
+        .credits {
+            margin: 0;
+        }
+    }
+
+    //bottom main nav
+    .bottom-main-nav {
+        margin: 0;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-color: $gray-light;
+        background-color: $white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        > div {
+            height: $navbar-height;
+            button.map.mobile {
+                width: 5em;
+                font-size: 14px;
+            }
+        }
+    }
+    .dropup {
+
+    }
+
+    .sidebar-toggle {
+        display: none;
+    }
+
+    .options {
+        margin: 0;
+        top: 0;
+        width: inherit;
+        button.search-mobile {
+            right: 22%;
+        }
+        div.center {
+            position: absolute;
+            width: 100%;
+            div.info {
+                margin: 0 auto;
+                width: 5em;
+                a.info-button {
+                    svg {
+                    }
+                }
+            }
+        }
+        .opacity {
+            width: 100%;
+        }
+        #opacity {
+        }
+        .year {
+            right: 0;
+            position: absolute;
+        }
+        .opacity-active {
+            position: fixed;
+            bottom: 4.5em;
+            width: 100%;
+            background-color: #fff;
+            z-index: 1;
+            border: 0;
+            right: 0em;
+            border-top: 2px solid grey;
+
+            .satelliet {
+                width: 8em;
+            }
+            #contrast-value {
+                margin-top: -1.8em;
+                padding-right: 2em;
+            }
+        }
+        .opacity-active input[type=range] {
+            position: relative;
+            width: 12em;
+            margin-right: 5.5em;
+        }
+    }
+    .search-address {
+        background: white;
+        position: fixed;
+
+        #search {
+            margin-left: 5em;
+        }
+    }
+    .search-address::after {
+        border-right: 0px;
+    }
+
+    .search-address {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        display: none;
+        bottom: 4.3em;
+        border-top: 2px solid grey;
+    }
+
+    #menu-primary-navigation > li:first-child {
+        border-top: 0;
+    }
+    .search-address #search {
+        width: 16em;
+    }
+
+    .back {
+        font-size: 1.3em;
+        margin-top: .95em;
+        margin-left: 1.8em;
+        float: left;
+        .back-link {
+            color: $black;
+        }
+    }
+    form#set-opacity {
+        position: absolute;
+        right: 0;
+    }
+    .image-popup {
+        width: 100%
+    }
+    .mobile-back, .zoom-in, .zoom-out {
+        display: none;
+    }
+    .info-icon {
+        margin: 0.9em .5em 0em 0.4em;
+    }
+    .streetviewClose {
+        margin-right: 0.3em;
+        margin-top: 1em;
+    }
+    .gm-iv-container, .gm-iv-address {
+        display: none !important;
+    }
+    .image-popup > p.wp-caption-text {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    .activate-menu-icon {
+        width: 18px;
+    }
+    .year .dropdown-menu {
+        overflow: auto;
+        max-height: calc(100vh - 8.8em);
+    }
+    .navbar-default .navbar-nav {
+        margin: 0;
+        max-height: calc(100vh - 8.8em);
+        overflow: scroll;
+    }
+}

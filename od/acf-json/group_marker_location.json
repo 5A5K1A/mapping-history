@@ -1,0 +1,85 @@
+{
+    "key": "group_marker_location",
+    "title": "Markers Lokatie",
+    "fields": [
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_56bb49ebec61b",
+            "label": "Foto jaar (hiddem)",
+            "name": "image_year",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "editor-hidden",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "message": "<div id=\"publishing-action\">\n\t\t\t<input name=\"save\" type=\"submit\" class=\"button button-primary button-large\" id=\"publish\" value=\"Bijwerken\">\n\t\t<\/div>\n\t\t<div class=\"clear\"><\/div>",
+            "esc_html": 0,
+            "new_lines": "",
+            "key": "field_56d41fbf5c9fd",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "height": "",
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "key": "field_56bb2e2b440df",
+            "label": "Lokatie op de kaart (verplicht)",
+            "name": "marker_location",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "marker"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "author",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "CPT: Marker",
+    "modified": 1486210049
+}
